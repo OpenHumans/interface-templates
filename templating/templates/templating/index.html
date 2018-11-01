@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<h1 class="mt-5">Integration Name</h1>
+
+<div class="row">
+  <div class="col-md">
+    <p>
+      Connect to your <i>Open Humans</i> account to store <code>data type</code> data from <code>external data source</code> in your account.
+    </p>
+    <a href="{% url 'logged_in' %}" class="btn btn-primary">
+      Login with Open Humans
+    </a>
+  </div>
+  <div class="col-md">
+    <h2>What is <code>external data source</code>?</h2>
+    <p>
+    <a href='#'><code>external data source</code></a> is a <code>data source type (app, website, service)</code> that does x, y and z.
+    </p>
+    <p>
+      Data from <code>external data source</code> includes:
+    </p>
+    <ul>
+      <li>x</li>
+      <li>y</li>
+      <li>z</li>
+    </ul>
+    <h2>What does this website do?</h2>
+    <p>
+    If you log in with your <i>Open Humans</i> account you can use this app to transfer your data from <code>external data source</code> to your <i>Open Humans</i> account.
+    </p>
+    <p>This project is run by <a href="https://openhumansfoundation.org/">the Open Humans Foundation</a> and governed by the
+      <a href="https://www.openhumans.org/terms/">Open Humans terms of use</a>.
+    </p>
+    <p>
+      You can read more about its code, operation, and data management in our <a href='#'>About/FAQ page</a>.</p>
+    <h2>Will <i>Open Humans</i> make my data from <code>external data source</code> publicly available?</h2>
+    <p>
+    The short answer: No.<br>
+    The long answer: Data is private by default. If you want to, you can opt to make data sets publicly available on <i>Open Humans</i> and/or share it with other projects, but you can always keep data private.
+    </p>
+  </div>
+</div>
+
+{% endblock main %}

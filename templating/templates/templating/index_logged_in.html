@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<h1 class="mt-5">Integration Name</h1>
+
+<div class="row">
+  <div class="col-md">
+    <h3>Your <code>external data source</code> Data</h3>
+
+    <p>
+      <a href="#" class="btn btn-primary">
+        Download your Data
+      </a>
+      <span class="form-text text-muted">You already have <code>external data source</code> Data in your Open Humans account. Download the data by clicking above.</span>
+    </p>
+    <p>
+      <a href="#" class="btn btn-success">
+        Update Data
+      </a>
+      <span class="form-text text-muted">Fetch new data from <code>external data source</code>.</span>
+    </p>
+    <p>
+      <a href="#" class="btn btn-danger">
+      Unlink <code>external data source</code>
+      </a>
+      <span class="form-text text-muted">Unlink your <code>external data source</code> if you want to replace it with another one.</span>
+    </p>
+    <p>
+      <a href="#" class="btn btn-danger">
+      Delete Your Account
+      </a>
+      <span class="form-text text-muted">Delete your account on <code>Integration name</code>.</span>
+    </p>
+  </div>
+  <div class="col-md">
+    <h2>
+      Set up <code>Integration name</code>.
+    </h2>
+  <p>
+    To connect <code>Integration name</code> to your Open Humans account:
+    <ul>
+      <li>do x,</li>
+      <li>y,</li>
+      <li>z,</li>
+      <li>etc.</li>
+    </ul>
+  </p>
+  </div>
+
+{% endblock main %}
